@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: imagen-presupuestoanual:latest
+    container_name: presupuestoanual-container
+    ports:
+      - "8083:3000"
+    env_file:
+      - .env
+    depends_on: []
+    restart: unless-stopped

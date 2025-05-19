@@ -25,12 +25,25 @@ export default function Home() {
           <LoginHeader />
 
           <div className="flex-grow flex flex-col justify-center">
-            <div className="h-[320px] flex items-start justify-center">
-              {showResetPassword ? (
-                <ResetPassword onCancel={handleCancelReset} />
-              ) : (
+            <div className="h-[320px] flex items-start pt-2 justify-center relative">
+              <div
+                className={`absolute w-full transition-opacity duration-300 ease-in-out ${
+                  showResetPassword
+                    ? "opacity-0 pointer-events-none"
+                    : "opacity-100"
+                }`}
+              >
                 <LoginForm onResetPasswordClick={handleResetPasswordClick} />
-              )}
+              </div>
+              <div
+                className={`absolute w-full transition-opacity duration-300 ease-in-out ${
+                  showResetPassword
+                    ? "opacity-100"
+                    : "opacity-0 pointer-events-none"
+                }`}
+              >
+                <ResetPassword onCancel={handleCancelReset} />
+              </div>
             </div>
           </div>
 

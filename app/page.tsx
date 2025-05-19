@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import LoginForm from "./components/login/login-form/LoginForm";
-import LoginImage from "./components/login/login-image/LoginImage";
-import ResetPassword from "./components/login/reset-password/ResetPassword";
-import LoginHeader from "./components/login/login-header/LoginHeader";
-import LoginFooter from "./components/login/login-footer/LoginFooter";
+import LoginForm from "./components/login/LoginForm";
+import LoginImage from "./components/login/LoginImage";
+import ResetPassword from "./components/login/ResetPassword";
+import LoginHeader from "./components/login/LoginHeader";
+import LoginFooter from "./components/login/LoginFooter";
 
 export default function Home() {
   const [showResetPassword, setShowResetPassword] = useState(false);

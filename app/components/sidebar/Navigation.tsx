@@ -21,7 +21,7 @@ const SidebarNavigation = () => {
     <div className="pt-1">
       {/* Elemento Dashboard */}
       <Link href="/dashboard" className="block">
-        <div className="flex items-center px-4 pb-3 text-[#0a5768] hover:bg-white rounded-lg mx-2">
+        <div className="flex items-center px-4 py-3 text-[#0a5768] hover:bg-white hover:shadow-md rounded-lg mx-2 transition-all duration-200">
           <div className="w-6 h-6 flex items-center justify-center mr-3">
             <IconGraph />
           </div>
@@ -32,7 +32,7 @@ const SidebarNavigation = () => {
       {/* Elemento Direcciones */}
       <div className="block">
         <div
-          className="flex items-center justify-between px-4 py-3 text-gray-600 hover:bg-white hover:text-[#0a5768] rounded-lg mx-2 cursor-pointer"
+          className="flex items-center justify-between px-4 py-3 text-gray-600 hover:bg-white hover:text-[#0a5768] hover:shadow-md rounded-lg mx-2 cursor-pointer transition-all duration-200"
           onClick={() => toggleItem("direcciones")}
         >
           <div className="flex items-center">
@@ -47,7 +47,7 @@ const SidebarNavigation = () => {
       {/* Elemento Áreas de Gestión */}
       <div className="block">
         <div
-          className="flex items-center justify-between px-4 py-3 text-gray-600 hover:bg-white hover:text-[#0a5768] rounded-lg mx-2 cursor-pointer"
+          className="flex items-center justify-between px-4 py-3 text-gray-600 hover:bg-white hover:text-[#0a5768] hover:shadow-md rounded-lg mx-2 cursor-pointer transition-all duration-200"
           onClick={() => toggleItem("areas")}
         >
           <div className="flex items-center">
@@ -61,7 +61,7 @@ const SidebarNavigation = () => {
 
       {/* Elemento Unidades */}
       <Link href="/unidades" className="block">
-        <div className="flex items-center px-4 py-3 text-gray-600 hover:bg-white hover:text-[#0a5768] rounded-lg mx-2">
+        <div className="flex items-center px-4 py-3 text-gray-600 hover:bg-white hover:text-[#0a5768] hover:shadow-md rounded-lg mx-2 transition-all duration-200">
           <div className="w-6 h-6 flex items-center justify-center mr-3">
             <IconCategory />
           </div>
@@ -71,7 +71,7 @@ const SidebarNavigation = () => {
 
       {/* Elemento Usuarios */}
       <Link href="/usuarios" className="block">
-        <div className="flex items-center px-4 py-3 text-gray-600 hover:bg-white hover:text-[#0a5768] rounded-lg mx-2">
+        <div className="flex items-center px-4 py-3 text-gray-600 hover:bg-white hover:text-[#0a5768] hover:shadow-md rounded-lg mx-2 transition-all duration-200">
           <div className="w-6 h-6 flex items-center justify-center mr-3">
             <IconUsersGroup />
           </div>

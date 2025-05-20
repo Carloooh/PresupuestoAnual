@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Sidebar from "../components/sidebar/Sidebar";
 import Content from "../components/content/Content";
+import { IconLayoutSidebarLeftExpand } from "@tabler/icons-react";
 
 export default function DashboardHome() {
   const [isMobile, setIsMobile] = useState(false);
@@ -43,19 +44,7 @@ export default function DashboardHome() {
               onClick={toggleSidebar}
               className="mr-4 text-gray-600 focus:outline-none"
             >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              <IconLayoutSidebarLeftExpand />
             </button>
           </header>
         )}

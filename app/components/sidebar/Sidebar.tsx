@@ -2,7 +2,9 @@
 
 import SidebarHeader from "./Header";
 import SidebarNavigation from "./Navigation";
-import SidebarUser from "./user/Placeholder";
+import SidebarUser from "./footer/User";
+import SidebarFooter from "./footer/Footer";
+import { IconLayoutSidebarRightExpand } from "@tabler/icons-react";
 
 interface SidebarProps {
   isMobile: boolean;
@@ -20,7 +22,11 @@ const Sidebar = ({ isMobile, isOpen, toggleSidebar }: SidebarProps) => {
             isOpen ? "opacity-50" : "opacity-0 pointer-events-none"
           }`}
           onClick={toggleSidebar}
-        />
+        >
+          <div className="absolute top-4 right-4 p-2 rounded-full bg-white/20 backdrop-blur-sm cursor-pointer">
+            <IconLayoutSidebarRightExpand size={24} className="text-white" />
+          </div>
+        </div>
       )}
 
       {/* Sidebar */}
@@ -44,6 +50,7 @@ const Sidebar = ({ isMobile, isOpen, toggleSidebar }: SidebarProps) => {
           <SidebarNavigation />
         </div>
         <SidebarUser />
+        <SidebarFooter />
       </aside>
     </>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 import { IconLogout2 } from "@tabler/icons-react";
 import { IconUser } from "@tabler/icons-react";
 import { IconChevronDown } from "@tabler/icons-react";
@@ -97,20 +98,20 @@ const SidebarUser = () => {
           </div>
 
           <div className="mt-3 pt-3 border-t border-gray-100 flex flex-col gap-2">
-            <a
+            <Link
               href="/perfil"
               className="flex items-center px-3 py-2 text-sm text-[#0a5768] bg-[#f5f7f9] hover:bg-[#e1e3e5] rounded-md transition-colors duration-200"
             >
               <IconUser size={18} className="mr-2" />
               <span className="ml-1">Ver perfil</span>
-            </a>
-            <a
-              href="/logout"
+            </Link>
+            <Link
+              href="/"
               className="flex items-center px-3 py-2 text-sm text-white bg-[#2a737d] hover:bg-[#1e5359] rounded-md transition-colors duration-200"
             >
               <IconLogout2 size={18} className="mr-2" />
               <span className="ml-1">Cerrar sesión</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

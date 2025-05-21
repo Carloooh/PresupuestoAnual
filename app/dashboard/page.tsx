@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Sidebar from "../components/sidebar/Sidebar";
 import Content from "../components/content/Content";
 import { IconLayoutSidebarLeftExpand } from "@tabler/icons-react";
@@ -54,9 +53,6 @@ export default function DashboardHome() {
             <h2 className="text-lg font-medium mb-4">
               Bienvenido al Sistema de Presupuesto Anual
             </h2>
-            <Link href="/" className="text-blue-600 hover:underline">
-              Cerrar sesión
-            </Link>
           </div>
         </Content>
       </div>
